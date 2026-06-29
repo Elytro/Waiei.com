@@ -1,0 +1,111 @@
+/*--重置body--*/
+body
+{
+    border: 0;
+    margin: 0;
+}
+ 
+/*--重置button的边框--*/
+input,button
+{
+    border:0;
+}
+ 
+/*--上面选项菜单--*/
+#nav
+{
+    text-align: right;
+    margin-top: 21px;
+    margin-right: 8px;
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+ 
+#nav a
+{
+    color: #333;
+    font-weight:bold;
+    margin:0 7px;
+}
+ 
+#nav a.set,
+#nav a.login
+{
+    font-weight:normal;
+}
+ 
+#nav button
+{
+    background: #38f;
+    padding:4px 5px;
+    margin-left:5px;
+    color:White;
+}
+ 
+#nav a:hover
+{
+    color:#00C;
+}
+ 
+/*--主要部分--*/
+#main
+{
+    width:655px;
+    height:488px;
+    margin:0 auto;
+}
+ 
+/*--百度一下背景图片--*/
+#main .photo
+{
+    text-align:center;
+    margin-bottom:19px;
+}
+ 
+#main input
+{
+    border:1px solid #BBB;    
+    width:540px;
+    height:33px;
+    padding-left:5px;
+    margin:0;
+}
+ 
+#main input.sub
+{
+    width:100px;
+    height:36px;
+    background: #38f;
+    color:White;
+    font-size:15px;
+    border: 0;
+    margin:0;
+}
+ 
+#main input.si
+{
+    float:left;
+}
+ 
+/*--最底一块--*/
+#bottom
+{
+    margin-top:249px;
+}
+ 
+#bottom .ap
+{
+    font-size:12px;
+    text-align:center;
+}
+ 
+#bottom .ap a
+{
+    margin:0 6px;
+    color:Blue;
+}
+ 
+#bottom .ap p
+{
+    color:#666;
+}

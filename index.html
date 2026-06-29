@@ -1,1 +1,496 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Begin Waiei.com SEO tag v2.8.0 -->
+    <title>外卖媛官网,为您提供便捷的享受！</title>
+    <meta property="og:title" content="外卖媛官网,为您提供便捷的享受！" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="description" content="外卖媛(www.waiei.com)是一种新型、便捷、个性化的用餐服务模式，外卖媛为消费者带来了高品质、精致烹饪的美食体验。外卖媛怎么叫，外卖媛下单暗号，外卖媛怎么联系，外卖媛平台官网。外卖媛形象为黄色小短裙，黑色丝袜，高跟鞋等，尽显现代、年轻、性感、时尚的形象。" />
+    <meta property="og:description" content="外卖媛(www.waiei.com)是一种新型、便捷、个性化的用餐服务模式，外卖媛为消费者带来了高品质、精致烹饪的美食体验。外卖媛怎么叫，外卖媛下单暗号，外卖媛怎么联系，外卖媛平台官网。外卖媛形象为黄色小短裙，黑色丝袜，高跟鞋等，尽显现代、年轻、性感、时尚的形象。" />
+    <link rel="canonical" href="https://www.waiei.com/" />
+    <meta property="og:url" content="https://www.waiei.com/" />
+    <meta property="og:site_name" content="外卖媛官网,为您提供便捷的享受！" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="外卖媛官网,为您提供便捷的享受！" />
+    <meta property="og:image" content="https://imgsa.qtimg.com/design/9cee9f8c19f210d2b8294a9d12ffd8ea.png"/>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","description":"外卖媛(www.waiei.com)是一种新型、便捷、个性化的用餐服务模式，外卖媛为消费者带来了高品质、精致烹饪的美食体验。外卖媛怎么叫，外卖媛下单暗号，外卖媛怎么联系，外卖媛平台官网。外卖媛形象为黄色小短裙，黑色丝袜，高跟鞋等，尽显现代、年轻、性感、时尚的形象。","headline":"外卖媛官网,为您提供便捷的享受！","name":"外卖媛官网,为您提供便捷的享受！","url":"https://www.waiei.com/"}</script>
+    <!-- End Waiei.com SEO tag -->
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://unpkg.com/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #2c3e50;
+            line-height: 1.6;
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        /* 添加公告栏 */
+        .announcement {
+            background: linear-gradient(135deg, #ff6b35, #ff8e53);
+            color: white;
+            padding: 0.75rem 0;
+            font-size: 0.9rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 10px rgba(255, 107, 53, 0.2);
+        }
+        
+        .announcement.show {
+            transform: translateY(0);
+        }
+        
+        .announcement-content {
+            text-align: center;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        .announcement-content a {
+            color: #fff;
+            text-decoration: underline;
+            transition: all 0.3s ease;
+        }
+        
+        .announcement-content a:hover {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        /* 主区域 */
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            padding: 0 0 0;
+            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #2c3e50, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            color: #6c757d;
+            margin-bottom: 3rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #ff6b35, #ff8e53);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .btn-primary:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+        
+        /* 功能区域 */
+        .features {
+            padding: 3rem 0;
+            background: #f8f9fa;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: white;
+            border-radius: 20px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b35, #ff8e53);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .feature:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .feature p {
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+        
+        /* 页脚 */
+        .footer {
+            padding: 4rem 0 2rem;
+            text-align: center;
+            background: white;
+            border-top: 1px solid #f1f1f1;
+        }
+        
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-links a {
+            color: #6c757d;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .footer-links a:hover {
+            color: #ff6b35;
+            transform: translateY(-2px);
+        }
+        
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #f1f1f1;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .copyright a {
+            color: #6c757d;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .copyright a:hover {
+            color: #ff6b35;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .feature {
+                padding: 2rem;
+            }
+        }
+        
+        /* 粒子背景 */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: 50%;
+            animation: float-particle 20s infinite linear;
+        }
+        
+        @keyframes float-particle {
+            from {
+                transform: translateY(100vh) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-100vh) translateX(100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- 公告栏 -->
+    <div class="announcement" id="announcement">
+        <div class="announcement-content">
+            <i class="fas fa-bullhorn me-2"></i>
+            <strong>新用户专享：</strong> <a href="#register" onclick="closeAnnouncement(); return true;">立即注册</a>领取20元外卖红包，首单立减！<a href="#coupons" onclick="closeAnnouncement(); return true;">查看更多优惠</a>
+            <i class="fas fa-times ms-3" style="cursor: pointer;" onclick="closeAnnouncement()"></i>
+        </div>
+    </div>
 
+    <!-- 主区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>外卖媛生活</h1>
+            <p>专业外卖配送 · 专属红包福利 · 生活服务</p>
+            <div>
+                <a href="//qiwei.waiei.com" class="btn-primary">
+                    <i class="fas fa-receipt me-2"></i>立即领取红包
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能 -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature" data-aos="fade-up" data-aos-delay="100">
+                    <h3>
+                        外卖媛红包
+                    </h3>
+                    <p>新人专享20元红包，每日签到奖励，让每一单都更实惠</p>
+                </div>
+                <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                    <h3>
+                        外卖媛服务
+                    </h3>
+                    <p>10万+专业外卖员，外卖媛专属计划，30分钟快速送达</p>
+                </div>
+                <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                    <h3>
+                        本地生活服务
+                    </h3>
+                    <p>美食外卖、超市便利、家政服务，全方位生活服务</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h4 class="mb-4">
+                    外卖媛服务. 让美好触手可及
+                </h4>
+                <div class="footer-links">
+                    <a href="#home">
+                        <i class="fas fa-home me-1"></i>首页
+                    </a>
+                    <a href="#features">
+                        <i class="fas fa-concierge-bell me-1"></i>服务
+                    </a>
+                    <a href="#contact">
+                        <i class="fas fa-envelope me-1"></i>联系我们
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p>
+                        <a href="https://beian.miit.gov.cn/" target="_blank">
+                            <i class="fas fa-shield-alt me-1"></i>鲁ICP备2025144109号-15
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://unpkg.com/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://unpkg.com/@fortawesome/fontawesome-free@6.0.0/js/all.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // 初始化AOS动画
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+        
+        // 创建粒子背景
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 15;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.width = Math.random() * 10 + 5 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 20 + 20) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        createParticles();
+        
+        // 显示公告栏
+        setTimeout(() => {
+            const announcement = document.getElementById('announcement');
+            announcement.classList.add('show');
+        }, 1000);
+        
+        // 关闭公告栏
+        function closeAnnouncement() {
+            const announcement = document.getElementById('announcement');
+            announcement.classList.remove('show');
+        }
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    // 滚动到目标位置，考虑公告栏高度
+                    const announcementHeight = document.getElementById('announcement').classList.contains('show') 
+                        ? document.getElementById('announcement').offsetHeight 
+                        : 0;
+                    const targetPosition = target.offsetTop - announcementHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ESC键关闭公告栏
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const announcement = document.getElementById('announcement');
+                if (announcement.classList.contains('show')) {
+                    closeAnnouncement();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
